@@ -6,11 +6,13 @@
 </head>
 
 <body>
-    <h1>Student Study Planner</h1>
+
+    <h1>📚 Student Study Planner</h1>
 
     <p>Plan your studies and keep track of your tasks.</p>
 
     <input type="text" id="taskInput" placeholder="Enter your study task">
+    
     <input type="date" id="dateInput">
 
     <button onclick="addTask()">Add Task</button>
@@ -49,10 +51,13 @@
 
         function completeTask(button) {
             let task = button.parentElement.querySelector("span");
+
             task.style.textDecoration = "line-through";
+
             button.innerText = "Completed ✓";
             button.disabled = true;
         }
     </script>
+
 </body>
 </html>
